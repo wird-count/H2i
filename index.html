@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -97,3 +98,104 @@
 <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indigo – Boutique de vêtements</title>
+<meta name="description" content="Vêtements simples et bien coupés pour homme et femme. Commande par WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">H2i</a>
+  <nav id="nav" class="nav">
+    <a href="#collection">Collection</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="actions">
+    <button id="cartBtn" class="cart-btn" aria-label="Ouvrir le panier">Panier <span id="cartCount">0</span></button>
+    <button id="menuBtn" class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Des vêtements simples, bien coupés, faits pour durer.</h1>
+      <p>Hauts, pantalons, vestes et robes en coton et lin. Choisissez votre taille et commandez par WhatsApp.</p>
+      <a href="#collection" class="btn">Voir la collection</a>
+    </div>
+    <div class="hero-art" id="heroArt" aria-hidden="true"></div>
+  </section>
+
+  <section id="collection" class="section">
+    <h2>Collection</h2>
+    <div class="filters" id="filters" role="group" aria-label="Filtrer par catégorie"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="apropos" class="section about">
+    <h2>Pourquoi Indigo</h2>
+    <div class="about-grid">
+      <div>
+        <h3>Coupes durables</h3>
+        <p>Des patrons simples qui vont avec tout, saison après saison.</p>
+      </div>
+      <div>
+        <h3>Matières naturelles</h3>
+        <p>Coton épais, lin et denim, choisis pour tenir au lavage.</p>
+      </div>
+      <div>
+        <h3>Livraison dans toute l'Algérie</h3>
+        <p>Paiement à la livraison. Échange de taille possible sous 7 jours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form id="contactForm" class="contact">
+      <label>Nom
+        <input type="text" id="cName" required autocomplete="name">
+      </label>
+      <label>Message
+        <textarea id="cMsg" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn">Envoyer sur WhatsApp</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Indigo</span>
+  <span>Livraison 58 wilayas</span>
+</footer>
+
+<div id="overlay" class="overlay"></div>
+<aside id="cart" class="cart" aria-label="Panier" aria-hidden="true">
+  <div class="cart-head">
+    <h2>Votre panier</h2>
+    <button id="closeCart" class="icon-btn" aria-label="Fermer le panier">✕</button>
+  </div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-foot">
+    <div class="total"><span>Total</span><strong id="cartTotal">0 DA</strong></div>
+    <button id="checkout" class="btn full">Commander sur WhatsApp</button>
+    <button id="clearCart" class="link-btn">Vider le panier</button>
+  </div>
+</aside>
+
+<div id="toast" class="toast" role="status"></div>
+
+<script src="script.js/script>
+</body>
+</html>
+>>>>>>> 25582820ee8aaccb2e5b98595a81467216231234
